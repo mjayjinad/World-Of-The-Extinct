@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rigid Carnotaurus-Sastrei
+* source:	https://sketchfab.com/3d-models/rigid-carnotaurus-sastrei-232b60653c1740fa8570b6c90b377871
+* author:	Wormhole Studio (https://sketchfab.com/olahamieholahamieholahamieh)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rigid Carnotaurus-Sastrei" (https://sketchfab.com/3d-models/rigid-carnotaurus-sastrei-232b60653c1740fa8570b6c90b377871) by Wormhole Studio (https://sketchfab.com/olahamieholahamieholahamieh) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

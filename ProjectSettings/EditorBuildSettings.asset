@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Classic Cars.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Animals.unity
+    guid: 90d08b310f11998498776208ed785a89
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d72d2a7a176608d409c6ee3425fb5757, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c9439064abe805a489b45037aea251ad, type: 2}

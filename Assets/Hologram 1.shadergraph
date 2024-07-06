@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "597ea272a059411ca054b07f31eff6b0",
     "m_Properties": [
@@ -20,6 +20,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "711fdec0863744c49675b39b87cd9c5e"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "2b6cdc9397d5403c9bf5ea0a2957b3be"
@@ -392,10 +398,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"fileID\":10202,\"guid\":\"0000000000000000e000000000000000\",\"type\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Shader Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": ""
@@ -939,7 +946,8 @@
         "m_SerializableColors": []
     },
     "m_TextureType": 0,
-    "m_NormalMapSpace": 0
+    "m_NormalMapSpace": 0,
+    "m_EnableGlobalMipBias": true
 }
 
 {
@@ -1094,9 +1102,13 @@
         "m_GuidSerialized": "059f13ce-a461-4984-9c7f-be3dd0e24e22"
     },
     "m_Name": "Scroll Speed",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_5d99025bfb8e453db98ef78761841064",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1117,9 +1129,13 @@
         "m_GuidSerialized": "5ca819c0-0ce8-446d-9ae5-10d392cd87d9"
     },
     "m_Name": "Hologram Texture Tiling",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector2_602ad9c6ae3b439290b5775774479b12",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1175,6 +1191,30 @@
     "m_Value": 0.5,
     "m_DefaultValue": 0.5,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "711fdec0863744c49675b39b87cd9c5e",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "9f20bb7331f14d2780c472abf3dec66c"
+        },
+        {
+            "m_Id": "b55026cb9edc4bdbacebbc4cc08e24a5"
+        },
+        {
+            "m_Id": "602ad9c6ae3b439290b5775774479b12"
+        },
+        {
+            "m_Id": "5d99025bfb8e453db98ef78761841064"
+        },
+        {
+            "m_Id": "95fb1079d2ec47b0bb7dcb82cacfd11a"
+        }
+    ]
 }
 
 {
@@ -1530,9 +1570,13 @@
         "m_GuidSerialized": "89fb9472-70dd-4734-ab44-bd3fe7a6802e"
     },
     "m_Name": "Fresnel color",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_95fb1079d2ec47b0bb7dcb82cacfd11a",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1543,6 +1587,7 @@
         "b": 0.24692010879516602,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 1
 }
 
@@ -1680,9 +1725,13 @@
         "m_GuidSerialized": "c56c3aa1-3905-4aca-9b9e-64742751dd6f"
     },
     "m_Name": "Base Color",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_9f20bb7331f14d2780c472abf3dec66c",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1693,6 +1742,7 @@
         "b": 0.9360222220420837,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -1771,17 +1821,23 @@
 }
 
 {
-    "m_SGVersion": 0,
+    "m_SGVersion": 1,
     "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalTarget",
     "m_ObjectId": "abef76bd7dae428fa77a1f2d61b59fc6",
     "m_ActiveSubTarget": {
         "m_Id": "96414ec7ac3b40a5b061c6e9512c7aac"
     },
+    "m_AllowMaterialOverride": false,
     "m_SurfaceType": 1,
+    "m_ZTestMode": 4,
+    "m_ZWriteControl": 0,
     "m_AlphaMode": 0,
-    "m_TwoSided": false,
+    "m_RenderFace": 2,
     "m_AlphaClip": false,
-    "m_CustomEditorGUI": ""
+    "m_CastShadows": true,
+    "m_ReceiveShadows": true,
+    "m_CustomEditorGUI": "",
+    "m_SupportVFX": false
 }
 
 {
@@ -1932,9 +1988,13 @@
         "m_GuidSerialized": "3cb08f32-c60d-479c-867a-112362a50355"
     },
     "m_Name": "Hologram Texture",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Texture2D_b55026cb9edc4bdbacebbc4cc08e24a5",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1943,6 +2003,8 @@
         "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"a2ebece26a3758244a549e5ebe568376\",\"type\":3}}",
         "m_Guid": ""
     },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
 }
